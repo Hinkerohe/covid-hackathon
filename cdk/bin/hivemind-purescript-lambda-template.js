@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+require("source-map-support/register");
+const cdk = require("@aws-cdk/core");
+const hivemind_purescript_lambda_template_stack_1 = require("../lib/hivemind-purescript-lambda-template-stack");
+const app = new cdk.App();
+new hivemind_purescript_lambda_template_stack_1.HivemindPurescriptLambdaTemplateStack(app, 'HivemindPurescriptLambdaTemplateStack', {
+    env: {
+        region: 'eu-west-1',
+        account: '397794117513'
+    }
+});
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaGl2ZW1pbmQtcHVyZXNjcmlwdC1sYW1iZGEtdGVtcGxhdGUuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJoaXZlbWluZC1wdXJlc2NyaXB0LWxhbWJkYS10ZW1wbGF0ZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFDQSx1Q0FBcUM7QUFDckMscUNBQXFDO0FBQ3JDLGdIQUF5RztBQUV6RyxNQUFNLEdBQUcsR0FBRyxJQUFJLEdBQUcsQ0FBQyxHQUFHLEVBQUUsQ0FBQztBQUMxQixJQUFJLGlGQUFxQyxDQUFDLEdBQUcsRUFBRSx1Q0FBdUMsRUFBRTtJQUNwRixHQUFHLEVBQUU7UUFDRCxNQUFNLEVBQUUsV0FBVztRQUNuQixPQUFPLEVBQUUsY0FBYztLQUMxQjtDQUNKLENBQUMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbIiMhL3Vzci9iaW4vZW52IG5vZGVcbmltcG9ydCAnc291cmNlLW1hcC1zdXBwb3J0L3JlZ2lzdGVyJztcbmltcG9ydCAqIGFzIGNkayBmcm9tICdAYXdzLWNkay9jb3JlJztcbmltcG9ydCB7IEhpdmVtaW5kUHVyZXNjcmlwdExhbWJkYVRlbXBsYXRlU3RhY2sgfSBmcm9tICcuLi9saWIvaGl2ZW1pbmQtcHVyZXNjcmlwdC1sYW1iZGEtdGVtcGxhdGUtc3RhY2snO1xuXG5jb25zdCBhcHAgPSBuZXcgY2RrLkFwcCgpO1xubmV3IEhpdmVtaW5kUHVyZXNjcmlwdExhbWJkYVRlbXBsYXRlU3RhY2soYXBwLCAnSGl2ZW1pbmRQdXJlc2NyaXB0TGFtYmRhVGVtcGxhdGVTdGFjaycsIHtcbiAgICBlbnY6IHtcbiAgICAgICAgcmVnaW9uOiAnZXUtd2VzdC0xJyxcbiAgICAgICAgYWNjb3VudDogJzM5Nzc5NDExNzUxMydcbiAgICB9XG59KTtcbiJdfQ==
