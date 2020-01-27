@@ -3,6 +3,7 @@
 ## Development
 ```
 # Build your application
+npm install
 npx spago build
 ```
 This creates the handler. To invoke it locally: 
@@ -14,8 +15,11 @@ node ./test.js
 
 ## Deployment
 ```
+npm prune --production
+npm install --production
 npm run bundle
 npm run zip
+npm install
 cd cdk/
-cdk deploy --profile <<your profile>>
+npx cdk deploy --profile <<your profile>>
 ```

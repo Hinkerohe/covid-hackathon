@@ -6,10 +6,12 @@
   "directories": {
     "test": "test"
   },
-  "dependencies": {},
   "devDependencies": {
+    "aws-cdk": "^1.22.0",
     "purescript": "^0.13.6",
-    "spago": "^0.13.1"
+    "purty": "^4.5.2",
+    "spago": "^0.13.1",
+    "typescript": "^3.7.5"
   },
   "scripts": {
     "bundle": "npx spago bundle-module --to Main.js",
