@@ -7,6 +7,10 @@ npx spago build
 ```
 This creates the handler. To invoke it locally: 
 ```
+# bundle app
+npm run bundle 
+
+# then run it
 node -e "require('./index.js').handler({\"name\":\"Jan\"}, null)"
 # or 
 node ./test.js
